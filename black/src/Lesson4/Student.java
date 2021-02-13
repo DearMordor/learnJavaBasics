@@ -8,6 +8,10 @@ public class Student {
     String name;
     String lastName;
     String year;
+
+    double average(double a , double b, double c){
+        return  (a + b + c) / 3;
+    }
 }
 
 class StudentTest {
@@ -28,12 +32,12 @@ class StudentTest {
         orgratig.foreign_lan =5.0;
 
         System.out.print("Arlan :");
-        System.out.println((nurkharl.math_avg + nurkharl.foreign_lan + nurkharl.econ_avg) / 3);
+        System.out.println(nurkharl.average(nurkharl.math_avg, nurkharl.econ_avg, nurkharl.foreign_lan));
 
         System.out.print("Egor: ");
-        System.out.println((saranego.math_avg + saranego.foreign_lan + saranego.econ_avg) / 3);
+        System.out.println(saranego.average(saranego.math_avg, saranego.foreign_lan, saranego.econ_avg));
 
         System.out.print("Tigran: ");
-        System.out.println((orgratig.math_avg + orgratig.foreign_lan + orgratig.econ_avg) / 3);
+        System.out.println(orgratig.average(orgratig.math_avg, orgratig.foreign_lan, orgratig.econ_avg));
     }
 }
